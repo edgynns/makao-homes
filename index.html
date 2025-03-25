@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makao Homes | Premium Accommodation in Nairobi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Makao Homes</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#apartments" class="nav-link">Apartments</a></li>
+                        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Premium Accommodation in the Heart of Nairobi</h1>
+                    <p class="hero-description">A cozy and exclusive set of hand-picked arrangements that offers cultural accommodations and peaceful stays.</p>
+                    <a href="#apartments" class="button">View Apartments</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://source.unsplash.com/random/600x400/?apartment" alt="Premium apartment interior" id="hero-img">
+                    <div class="booking-form">
+                        <h3>Check Availability</h3>
+                        <div class="form-group">
+                            <label for="checkin">Check In</label>
+                            <input type="date" id="checkin" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check Out</label>
+                            <input type="date" id="checkout" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" class="form-control">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                        <button id="check-availability" class="button" style="width: 100%;">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="features">
+            <div class="container">
+                <h2 class="section-title">Our Amenities</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3 class="feature-title">High-Speed WiFi</h3>
+                        <p class="feature-description">Stay connected with our complimentary high-speed internet access.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3 class="feature-title">Gourmet Kitchen</h3>
+                        <p class="feature-description">Fully equipped kitchen with premium appliances and essentials.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="feature-title">Spa Experience</h3>
+                        <p class="feature-description">Luxurious bathrooms with premium toiletries and plush towels.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h3 class="feature-title">24/7 Concierge</h3>
+                        <p class="feature-description">Our dedicated team is available around the clock to assist you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="feature-title">Breakfast Option</h3>
+                        <p class="feature-description">Enjoy our optional gourmet breakfast with local ingredients.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h3 class="feature-title">Swimming Pool</h3>
+                        <p class="feature-description">Relax and unwind in our beautiful outdoor swimming pool.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apartments Section -->
+        <section id="apartments" class="apartments">
+            <div class="container">
+                <h2 class="section-title">Our Apartments</h2>
+                <div id="apartment-container" class="apartment-grid">
+                    <!-- Apartments will be loaded dynamically from API -->
+                    <div class="loading">Loading apartments...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Guest Experiences</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <p class="testimonial-quote">"Our stay at Makao Homes was absolutely delightful. The attention to detail and the warm atmosphere made us feel right at home. We'll definitely be back!"</p>
+                        <p class="testimonial-author">- Sarah & James, Mombasa</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-quote">"The location is perfect - close to attractions yet in a quiet neighborhood. The apartment was immaculate and had everything we needed for a comfortable stay."</p>
+                        <p class="testimonial-author">- Michael T., Nairobi</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-quote">"As a frequent business traveler, I appreciate the seamless check-in process and reliable WiFi. Makao Homes offers the perfect blend of comfort and convenience."</p>
+                        <p class="testimonial-author">- Lisa R., Kisumu</p>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="slider-dot active" data-slide="0"></div>
+                        <div class="slider-dot" data-slide="1"></div>
+                        <div class="slider-dot" data-slide="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title">Join our weekly Newsletter</h3>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column" id="about">
+                    <h3>About</h3>
+                    <p>Makao Homes offers premium accommodations in carefully selected locations in Nairobi, providing exceptional comfort and authentic experiences.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Riverside Drive, Westlands</li>
+                        <li>Nairobi, Kenya</li>
+                        <li>info@makaohomes.co.ke</li>
+                        <li>+254 708 123 456</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#apartments">Our Apartments</a></li>
+                        <li><a href="#amenities">Services</a></li>
+                        <li><a href="#home">Locations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get Social</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Makao Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
