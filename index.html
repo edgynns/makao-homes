@@ -36,27 +36,60 @@
                     <a href="#apartments" class="button">View Apartments</a>
                 </div>
                 <div class="hero-image">
-                    <img src="https://source.unsplash.com/random/600x400/?apartment" alt="Premium apartment interior" id="hero-img">
-                    <div class="booking-form">
-                        <h3>Check Availability</h3>
-                        <div class="form-group">
-                            <label for="checkin">Check In</label>
-                            <input type="date" id="checkin" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="checkout">Check Out</label>
-                            <input type="date" id="checkout" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="guests">Guests</label>
-                            <select id="guests" class="form-control">
-                                <option value="1">1 Guest</option>
-                                <option value="2">2 Guests</option>
-                                <option value="3">3 Guests</option>
-                                <option value="4">4 Guests</option>
-                            </select>
-                        </div>
-                        <button id="check-availability" class="button" style="width: 100%;">Check Availability</button>
+                    <img src="images/hero-image.jpg" alt="Premium apartment interior" id="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Check Availability Section - Moved out to be standalone -->
+        <section class="availability">
+            <div class="container">
+                <div class="check-availability-container">
+                    <h3>Check Availability</h3>
+                    <div class="form-group">
+                        <label for="checkin">Check In</label>
+                        <input type="date" id="checkin" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check Out</label>
+                        <input type="date" id="checkout" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" class="form-control">
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <button id="check-availability" class="button" style="width: 100%;">Check Availability</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Apartments Gallery -->
+        <section class="featured-spaces">
+            <div class="container">
+                <h2 class="section-title">Featured Living Spaces</h2>
+                <div class="apartment-gallery">
+                    <div class="gallery-item">
+                        <img src="images/apartment-1.jpg" alt="Bright living room with colorful decor">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/apartment-2.jpg" alt="Modern living room with pattern rug">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/apartment-3.jpg" alt="Bright living room with plants">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/apartment-4.jpg" alt="Cozy living room with white sofa">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/apartment-5.jpg" alt="Minimalist living room with bicycle art">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hero-image.jpg" alt="Luxury living room with palm view">
                     </div>
                 </div>
             </div>
@@ -118,8 +151,101 @@
             <div class="container">
                 <h2 class="section-title">Our Apartments</h2>
                 <div id="apartment-container" class="apartment-grid">
-                    <!-- Apartments will be loaded dynamically from API -->
-                    <div class="loading">Loading apartments...</div>
+                    <!-- Penthouse -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/hero-image.jpg" alt="Penthouse">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Penthouse</h3>
+                            <p class="apartment-description">Luxurious top-floor suite with panoramic views of Nairobi's skyline.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 7,839 / night</span>
+                                <span>1 Guest</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Executive Suite -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/apartment-1.jpg" alt="Executive Suite">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Executive Suite</h3>
+                            <p class="apartment-description">Elegant suite with separate living area and premium amenities.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 5,210 / night</span>
+                                <span>2 Guests</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Studio -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/apartment-2.jpg" alt="Studio">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Studio</h3>
+                            <p class="apartment-description">Compact and stylish space with all essentials for a comfortable stay.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 7,940 / night</span>
+                                <span>1 Guest</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Deluxe Room -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/apartment-3.jpg" alt="Deluxe Room">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Deluxe Room</h3>
+                            <p class="apartment-description">Spacious room with modern design and exceptional comfort.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 7,182 / night</span>
+                                <span>2 Guests</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Standard Suite -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/apartment-4.jpg" alt="Standard Suite">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Standard Suite</h3>
+                            <p class="apartment-description">Comfortable and well-equipped suite perfect for short stays.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 6,398 / night</span>
+                                <span>2 Guests</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Family Unit -->
+                    <div class="apartment-card">
+                        <div class="apartment-image">
+                            <img src="images/apartment-5.jpg" alt="Family Unit">
+                        </div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-title">Family Unit</h3>
+                            <p class="apartment-description">Spacious accommodation with multiple bedrooms ideal for family stays.</p>
+                            <div class="apartment-meta">
+                                <span class="price">KES 9,038 / night</span>
+                                <span>4 Guests</span>
+                            </div>
+                            <button class="book-now-btn button">View Details</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
